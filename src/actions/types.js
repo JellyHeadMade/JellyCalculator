@@ -1,0 +1,6 @@
+// DISPLAY STATE
+export const SET_DISPLAY = 'SET_DISPLAY';
+
+export const EQUAL_DISPLAY = 'EQUAL_DISPLAY';
+
+export const CLEAR_DISPLAY = 'CLEAR_DISPLAY';

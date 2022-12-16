@@ -1,0 +1,119 @@
+.calculator {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: [firstCol-s] 1fr [firstCol-e secondCol-s] 1fr [secondCol-e thirdCol-s] 1fr [thirdCol-e fourthCol-s] 1fr [fourthCol-e];
+    grid-template-rows: [DisplayRow-s] 2fr [DisplayRow-e secondRow-s] 1fr [secondRow-e thirdRow-s] 1fr [thirdRow-e fourthRow-s] 1fr [fourthRow-e fifthRow-s] 1fr [fifthRow-e sixthRow-s] 1fr [sixthRow-e];
+    width: 500px;
+    height: 100vh;
+    
+    .calculator-display {
+        grid-column: firstCol-s / fourthCol-e;
+        grid-row: DisplayRow-s / DisplayRow-e;
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    .Calbutton {
+
+        &__0 {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+        }
+
+        &__1 {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+        }
+
+        &__2 {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+        }
+
+        &__3 {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+        }
+
+        &__4 {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+        }
+
+        &__5 {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+        }
+
+        &__6 {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+        }
+
+        &__7 {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+        }
+
+        &__8 {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+        }
+
+        &__9 {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+        }
+
+        &__10 {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: secondRow-s/secondRow-e;
+        }
+
+        &__11 {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+        }
+
+        &__12 {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+        }
+
+        &__13 {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+        }
+
+        &__14 {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: secondRow-s/secondRow-e;
+        }
+
+        &__15 {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: secondRow-s/secondRow-e;
+        }
+
+        &__16 {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+        }
+
+        &__17 {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: secondRow-s/secondRow-e;
+        }
+
+        &__18 {
+            grid-column: thirdCol-s/fourthCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+        }
+    }
+}

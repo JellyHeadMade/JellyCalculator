@@ -1,10 +1,11 @@
 .calculator {
-    background-color: brown;
+    background-color: #faebd7;
     display: grid;
     grid-template-columns: [firstCol-s] 1fr [firstCol-e secondCol-s] 1fr [secondCol-e thirdCol-s] 1fr [thirdCol-e fourthCol-s] 1fr [fourthCol-e];
     grid-template-rows: [DisplayRow-s] 2fr [DisplayRow-e secondRow-s] 1fr [secondRow-e thirdRow-s] 1fr [thirdRow-e fourthRow-s] 1fr [fourthRow-e fifthRow-s] 1fr [fifthRow-e sixthRow-s] 1fr [sixthRow-e];
     width: 500px;
     height: 100vh;
+    grid-gap: 15px;
     
     .calculator-display {
         grid-column: firstCol-s / fourthCol-e;
@@ -20,100 +21,274 @@
     }
 
     .Calbutton {
+        // @include btnlooks;
 
         &__0 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: sixthRow-s/sixthRow-e;
+            @include btnlooks;
+            
+        }
+
+        &__0:hover {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__1 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+        }
+
+        &__1:hover {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__2 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+        }
+
+        &__2:hover {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__3 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+        }
+
+        &__3:hover {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__4 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+        }
+
+        &__4:hover {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__5 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+        }
+
+        &__5:hover {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__6 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+        }
+
+        &__6:hover {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__7 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+        }
+
+        &__7:hover {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__8 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+        }
+
+        &__8:hover {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__9 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+        }
+
+        &__9:hover {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__10 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+        }
+
+        &__10:hover {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__11 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+        }
+
+        &__11:hover {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__12 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+        }
+
+        &__12:hover {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__13 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+        }
+
+        &__13:hover {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__14 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+        }
+
+        &__14:hover {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__15 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+        }
+
+        &__15:hover {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__16 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: sixthRow-s/sixthRow-e;
+            @include btnlooks;
+        }
+
+        &__16:hover {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            @include btnlooks;
+            background-color: #094b4b;
+            color: #b4ccc2;
         }
 
         &__17 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: secondRow-s/secondRow-e;
+            @include specialbtnlooks;
+            border-radius: 50%;
+        }
+
+        &__17:hover {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            @include specialbtnlooks;
+            background-color: #f0e68c;
+            color: #094b4b;
         }
 
         &__18 {
             grid-column: thirdCol-s/fourthCol-e;
             grid-row: sixthRow-s/sixthRow-e;
+            @include specialbtnlooks;
+        }
+
+        &__18:hover {
+            grid-column: thirdCol-s/fourthCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            @include specialbtnlooks;
+            background-color: #f0e68c;
+            color: #094b4b;
         }
     }
 }

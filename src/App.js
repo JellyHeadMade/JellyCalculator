@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import './styles/baseclock.scss';
+import './main.scss';
 import BaseClock from './components/BaseClock';
 import ModularClock from './components/ModularClock';
 

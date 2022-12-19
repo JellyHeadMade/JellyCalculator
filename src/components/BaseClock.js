@@ -54,7 +54,7 @@ function BaseClock() {
                 <button onClick={onClick} type='button' className='Calbutton__15' value=')'>)</button>
                 <button onClick={onClick} type='button' className='Calbutton__16' value='.'>.</button>
                 <button onClick={clearEventHandler} type='button' className='Calbutton__17' value='clear'>clear</button>
-                <button onClick={equalEventHandler} type='button' className='Calbutton__18' value='equal'>equal</button>
+                <button onClick={equalEventHandler} type='button' className='Calbutton__18' value='equal'>=</button>
                 
             </div>
         </div>

@@ -1,0 +1,21 @@
+@mixin specialbtnlooks {
+    border-radius: 50em;
+    border-style: none;
+    color: #f0e68c;
+    background-color: #094b4b;
+    box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+    -webkit-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+    -moz-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ;
+    font-size: 2em;
+}
+
+@mixin btnlooks {
+    border-radius: 50%;
+    border-style: none;
+    background-color: #b4ccc2;
+    color: #094b4b;
+    box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+    -webkit-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+    -moz-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ;
+    font-size: 2em;
+}

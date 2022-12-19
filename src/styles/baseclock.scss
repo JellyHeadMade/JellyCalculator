@@ -4,20 +4,30 @@
     grid-template-columns: [firstCol-s] 1fr [firstCol-e secondCol-s] 1fr [secondCol-e thirdCol-s] 1fr [thirdCol-e fourthCol-s] 1fr [fourthCol-e];
     grid-template-rows: [DisplayRow-s] 2fr [DisplayRow-e secondRow-s] 1fr [secondRow-e thirdRow-s] 1fr [thirdRow-e fourthRow-s] 1fr [fourthRow-e fifthRow-s] 1fr [fifthRow-e sixthRow-s] 1fr [sixthRow-e];
     width: 500px;
-    height: 100vh;
+    height: 90vh;
     grid-gap: 15px;
+    padding-top: 2.5vh;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
     
     .calculator-display {
         grid-column: firstCol-s / fourthCol-e;
         grid-row: DisplayRow-s / DisplayRow-e;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.2);
         display: flex;
         justify-content: flex-end;
         align-items: center;
         padding: 0 1rem;
-        font-size: 2rem;
+        font-size: 5rem;
         font-weight: 700;
         color: #000;
+        width: 90%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+        -webkit-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ; 
+        -moz-box-shadow: -15px 0 24px rgba(0, 0, 0, 0.2)  ;
     }
 
     .Calbutton {
@@ -29,7 +39,6 @@
             @include btnlooks;
             
         }
-
         &__0:hover {
             grid-column: firstCol-s/firstCol-e;
             grid-row: sixthRow-s/sixthRow-e;
@@ -37,13 +46,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__0:active {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__1 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fifthRow-s/fifthRow-e;
             @include btnlooks;
         }
-
         &__1:hover {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fifthRow-s/fifthRow-e;
@@ -51,13 +65,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__1:active {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__2 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fifthRow-s/fifthRow-e;
             @include btnlooks;
         }
-
         &__2:hover {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fifthRow-s/fifthRow-e;
@@ -65,13 +84,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__2:active {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__3 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fifthRow-s/fifthRow-e;
             @include btnlooks;
         }
-
         &__3:hover {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fifthRow-s/fifthRow-e;
@@ -79,13 +103,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__3:active {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__4 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fourthRow-s/fourthRow-e;
             @include btnlooks;
         }
-
         &__4:hover {
             grid-column: firstCol-s/firstCol-e;
             grid-row: fourthRow-s/fourthRow-e;
@@ -93,13 +122,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__4:active {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__5 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fourthRow-s/fourthRow-e;
             @include btnlooks;
         }
-
         &__5:hover {
             grid-column: secondCol-s/secondCol-e;
             grid-row: fourthRow-s/fourthRow-e;
@@ -107,13 +141,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__5:active {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__6 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fourthRow-s/fourthRow-e;
             @include btnlooks;
         }
-
         &__6:hover {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: fourthRow-s/fourthRow-e;
@@ -121,13 +160,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__6:active {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__7 {
             grid-column: firstCol-s/firstCol-e;
             grid-row: thirdRow-s/thirdRow-e;
             @include btnlooks;
         }
-
         &__7:hover {
             grid-column: firstCol-s/firstCol-e;
             grid-row: thirdRow-s/thirdRow-e;
@@ -135,13 +179,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__7:active {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__8 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: thirdRow-s/thirdRow-e;
             @include btnlooks;
         }
-
         &__8:hover {
             grid-column: secondCol-s/secondCol-e;
             grid-row: thirdRow-s/thirdRow-e;
@@ -149,13 +198,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__8:active {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__9 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: thirdRow-s/thirdRow-e;
             @include btnlooks;
         }
-
         &__9:hover {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: thirdRow-s/thirdRow-e;
@@ -163,13 +217,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__9:active {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__10 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: secondRow-s/secondRow-e;
             @include btnlooks;
         }
-
         &__10:hover {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: secondRow-s/secondRow-e;
@@ -177,13 +236,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__10:active {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__11 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: thirdRow-s/thirdRow-e;
             @include btnlooks;
         }
-
         &__11:hover {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: thirdRow-s/thirdRow-e;
@@ -191,13 +255,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__11:active {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: thirdRow-s/thirdRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__12 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fourthRow-s/fourthRow-e;
             @include btnlooks;
         }
-
         &__12:hover {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fourthRow-s/fourthRow-e;
@@ -205,13 +274,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__12:active {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fourthRow-s/fourthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__13 {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fifthRow-s/fifthRow-e;
             @include btnlooks;
         }
-
         &__13:hover {
             grid-column: fourthCol-s/fourthCol-e;
             grid-row: fifthRow-s/fifthRow-e;
@@ -219,13 +293,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__13:active {
+            grid-column: fourthCol-s/fourthCol-e;
+            grid-row: fifthRow-s/fifthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__14 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: secondRow-s/secondRow-e;
             @include btnlooks;
         }
-
         &__14:hover {
             grid-column: secondCol-s/secondCol-e;
             grid-row: secondRow-s/secondRow-e;
@@ -233,13 +312,18 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__14:active {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__15 {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: secondRow-s/secondRow-e;
             @include btnlooks;
         }
-
         &__15:hover {
             grid-column: thirdCol-s/thirdCol-e;
             grid-row: secondRow-s/secondRow-e;
@@ -247,19 +331,30 @@
             background-color: #094b4b;
             color: #b4ccc2;
         }
+        &__15:active {
+            grid-column: thirdCol-s/thirdCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__16 {
             grid-column: secondCol-s/secondCol-e;
             grid-row: sixthRow-s/sixthRow-e;
             @include btnlooks;
         }
-
         &__16:hover {
             grid-column: secondCol-s/secondCol-e;
             grid-row: sixthRow-s/sixthRow-e;
             @include btnlooks;
             background-color: #094b4b;
             color: #b4ccc2;
+        }
+        &__16:active {
+            grid-column: secondCol-s/secondCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
         }
 
         &__17 {
@@ -268,7 +363,6 @@
             @include specialbtnlooks;
             border-radius: 50%;
         }
-
         &__17:hover {
             grid-column: firstCol-s/firstCol-e;
             grid-row: secondRow-s/secondRow-e;
@@ -276,19 +370,30 @@
             background-color: #f0e68c;
             color: #094b4b;
         }
+        &__17:active {
+            grid-column: firstCol-s/firstCol-e;
+            grid-row: secondRow-s/secondRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
+        }
 
         &__18 {
             grid-column: thirdCol-s/fourthCol-e;
             grid-row: sixthRow-s/sixthRow-e;
             @include specialbtnlooks;
         }
-
         &__18:hover {
             grid-column: thirdCol-s/fourthCol-e;
             grid-row: sixthRow-s/sixthRow-e;
             @include specialbtnlooks;
             background-color: #f0e68c;
             color: #094b4b;
+        }
+        &__18:active {
+            grid-column: thirdCol-s/fourthCol-e;
+            grid-row: sixthRow-s/sixthRow-e;
+            animation-name: click;
+            animation-duration: 0.2s;
         }
     }
 }

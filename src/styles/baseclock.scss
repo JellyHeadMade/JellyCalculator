@@ -1,14 +1,21 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
 .calculator {
     background-color: #faebd7;
     display: grid;
     grid-template-columns: [firstCol-s] 1fr [firstCol-e secondCol-s] 1fr [secondCol-e thirdCol-s] 1fr [thirdCol-e fourthCol-s] 1fr [fourthCol-e];
     grid-template-rows: [DisplayRow-s] 2fr [DisplayRow-e secondRow-s] 1fr [secondRow-e thirdRow-s] 1fr [thirdRow-e fourthRow-s] 1fr [fourthRow-e fifthRow-s] 1fr [fifthRow-e sixthRow-s] 1fr [sixthRow-e];
     width: 500px;
-    height: 90vh;
+    height: 90vh;;
     grid-gap: 15px;
-    padding-top: 2.5vh;
-    padding-left: 2.5vh;
-    padding-right: 2.5vh;
+    padding: 2.5vh;
     
     .calculator-display {
         grid-column: firstCol-s / fourthCol-e;

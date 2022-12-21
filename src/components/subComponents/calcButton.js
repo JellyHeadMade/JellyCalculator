@@ -13,10 +13,8 @@ function CalcButton(props) {
             props.setDisplay(e.target.value); 
         }
     }
-    return (
-        <div>
-            <button onClick={onClick} value={props.value}>{props.value}</button>
-        </div>
+    return (        
+        <button className={`Calbutton__${props.button}`} onClick={onClick} value={props.value}>{props.value}</button>   
     )
 }
 

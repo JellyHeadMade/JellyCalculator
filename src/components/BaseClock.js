@@ -4,7 +4,13 @@ function BaseClock() {
 
     const [calDisplay, setCalDisplay] = React.useState('');
 
+    function playSound() {
+        const audio = new Audio('https://www.soundjay.com/buttons/sounds/button-16.mp3');
+        audio.play();
+    }
+
     function onClick(e) {
+        playSound();
         if (calDisplay === '0') {
             clearZero();
         }
@@ -15,12 +21,14 @@ function BaseClock() {
     }
 
     function equalEventHandler(e) {
+        playSound();
         const target = e.target;
         const value = target.value;
         setCalDisplay(eval(calDisplay));
     }
 
     function clearEventHandler(e) {
+        playSound();
         const target = e.target;
         const value = target.value;
         setCalDisplay('');

@@ -4,7 +4,13 @@ import * as actions from '../../actions';
 
 function CalcButton(props) {
 
+    function playSound() {
+        const audio = new Audio('https://www.soundjay.com/buttons/sounds/button-16.mp3');
+        audio.play();
+    }
+
     const onClick = (e) => {
+        playSound();
         if (e.target.value === 'equal') {
             props.equateDisplay();
         } else if (e.target.value === 'clear') {
